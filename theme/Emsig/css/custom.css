@@ -1,0 +1,165 @@
+.has-error{
+    color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    border-color: #a94442;
+}
+
+.has-success {
+    border-color: #2b542c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+    color: #3c763d;
+}
+._overlay {
+    background-color:rgba(0,0,0,0.5);
+    position:fixed;
+    z-index:1000;
+    width:100%;
+    height:100%;
+    display: block;
+    color:white;
+    font-size:25px;
+    text-align: center;
+    display: block;
+}
+
+._overlay ._msg {
+    display: block;
+    margin-top: 25px;
+}
+
+@-moz-keyframes spin3 {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin2 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.spinner {
+    display: inline-block;
+    border-width: 8px;
+    border-style: solid;
+    border-right: 8px solid #DFF0D8;
+    border-color: #468847 #DFF0D8 #DFF0D8;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -webkit-border-top-colors: none;
+    -webkit-border-right-colors: none;
+    -webkit-border-bottom-colors: none;
+    -webkit-border-left-colors: none;
+    border-image: none;
+    font-size: 60px;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    animation: 1s linear 0s normal none infinite spin;
+    -moz-animation: 1s linear 0s normal none infinite spin3;
+    -webkit-animation: 1s linear 0s normal none infinite spin2;
+}
+
+/* bootstrap radio button fix vertical */
+
+.btn-group-vertical .btn:first-child {
+    margin-bottom: -4px;
+}
+
+/* bootstrap radio button fix horizontal*/
+.btn-group .btn:first-child{
+    margin: 3px -2px 0px -15px;
+}
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+    color: #468847;
+    background-color: #DFF0D8;
+    border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+    margin: 2px 0 3px 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    opacity: 0;
+    -moz-opacity: 0;
+    -webkit-opacity: 0;
+
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in-;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+    opacity: 1;
+}
+
+
+._big-button {
+    background-color: #468847;
+    width:100%;
+    text-align:center;
+    color:white;
+    margin-bottom:5px;
+    cursor:pointer;
+    padding:25px 0 25px 0;
+    border-radius: 3px;
+}
+
+._big-button:hover {
+    background-color: white;
+    color:#468847;
+}
+
+._big-button span {
+    font-size:20px;
+}
+
+._big-button i {
+    font-size:20px;
+}
+
+._tiny_msg {
+    font-size: 12px;
+}
+
+.invalid-form-error-message {
+    color: RED;
+}
